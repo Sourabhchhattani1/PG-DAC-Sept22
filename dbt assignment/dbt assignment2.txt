@@ -1,0 +1,42 @@
+Answer 1
+--------
+create table SEMP (
+    -> empno varchar(4),
+    -> empname varchar(20),
+    -> basic float,
+    -> deptno varchar(2),
+    -> depthead varchar(4)
+    -> );
+	
+Answer 2
+--------
+ create table sdept (
+    -> deptno varchar(2),
+    -> deptname varchar(15)
+    -> );
+
+Answer 3
+--------
+ insert into sdept values(10,'developement'),
+    -> (20,'training');
+	
+Answer 4
+--------
+insert into semp values(001,'Sunil',6000,10,null),
+	(0002,'Hiren',8000,20,null),(0003,'Ali',4000,10,0001),
+    (0004,'george',6000,null,0002);
+	
+Answer 5
+--------
+select *  from s;
+
+6--> select s#,sname from s;
+7--> select pname, color from p where city = 'london';
+8--> select sname from s where city = 'london';
+9--> select sname from s wher city = 'paris' or city = 'athens';
+10-> select jname from j where city = 'athens';
+11-> select pname from p where weight between 12 and 14;
+12-> select sname fromn s where status >= 20;
+13-> select sname from s where city not in('london');
+14-> select city from s;
+15-> select weight*1000 as 'weight in milligrams',weight * 0.001 as 'weight in kilograms' from p;
